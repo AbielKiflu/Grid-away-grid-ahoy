@@ -4,7 +4,94 @@
     font-family: 'Dosis', sans-serif;
 }
 
-.grid{
+
+
+/*   Container Style */
+.container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+    
+
+}
+
+/*   menu bar Style */
+
+.menu-bar{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #b6d2f1;
+    padding: 5px;
+    display:flex;
+    flex-flow: wrap row;
+     
+     
+}
+
+
+.btn-menu{
+    margin: 8px;
+    border-style: none;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+    background-image: url("img/menu.png");
+    background-color: transparent;
+    
+
+}
+
+.menu-item{
+    margin: 2px 1px;
+    padding:5px 25px;
+    text-align: center;
+    text-decoration:none;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color:#9ec4f3;
+}
+
+.menu-item:hover{
+    background-color:#6dacf8;
+}
+
+
+/*   Side bar Style */
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100px;
+    background-color: #E6EEF7;
+    padding: 5px;
+    
+    display:flex;
+    flex-direction: column;
+    
+}
+
+
+.nav-item{
+    margin: 8px;
+    padding: 5px;
+    text-align: center;
+    text-decoration:none;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color:#e3e7ec;
+}
+
+.nav-item:hover{
+    background-color:#b9bcc0;
+}
+
+
+/*  Main styles  */
+.main{
+    grid-column: 2/3;
+    grid-row: 2/3;
     display:grid;
     background-color: #E6EEF7;
     grid-gap: 15px;
