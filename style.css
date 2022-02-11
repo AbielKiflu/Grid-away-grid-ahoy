@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    
+    color: #5b5b5e;
 }
 
 .grid{
@@ -19,27 +19,22 @@ justify-content: center;
 background-color: #FFFFFF;
 box-shadow: 2px 2px 2px rgb(233, 231, 231), -2px -2px 1px  rgb(233, 231, 231);
 border: 1 solid black;
- 
 padding:10px;
 }
 
 .item > a{
-    color: #A2ACB5;
     text-decoration:none;
-    padding:10px 25px;
+    padding:5px 15px;
     font-size:16px;
     font: weight 700px;
      
     
 }
 
-.item:hover > a{
+.item > a:hover{
     background-color:#4F9CFC;
     color: #FFFFFF;
-    box-shadow: 2px 2px 2px rgb(233, 231, 231), -2px -2px 1px  rgb(233, 231, 231);
     text-decoration:none;
-    margin-bottom: 10px;
-    padding:10px 25px;
     border-radius:20px
 }
 
