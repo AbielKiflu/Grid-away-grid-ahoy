@@ -1,9 +1,10 @@
 ## Grid away, grid ahoy!
-### Click here to visit the website
+Hey click [here](https://abielkiflu.github.io/Grid-away-grid-ahoy-/) to see the webpage!!!
 
-### Technologies used
+##### Technologies used
 - Grid
+- Flexbox
 
 
-
+Thank you for visiting! 
 Enjoy it!!!
