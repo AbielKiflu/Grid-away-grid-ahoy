@@ -16,16 +16,15 @@
 }
 
 /*   menu bar Style */
-
 .menu-bar{
     background-color: #b6d2f1;
     padding: 5px;
     display:flex;
-    flex-flow: wrap row;    
+    flex-direction: row;  
 }
 
 
-.btn-menu{
+.menu-toggle{
     margin: 8px;
     border-style: none;
     border-radius: 5px;
@@ -33,19 +32,18 @@
     height: 24px;
     background-image: url("img/menu.png");
     background-color: transparent;
-    
-
+    display:none;
 }
 
 .menu-item{
     margin: 2px 1px;
-    padding:5px 25px;
+    padding:5px 20px;
     text-align: center;
     text-decoration:none;
     font-size: 15px;
     font-weight: 700;
     border-radius: 5px;
-    background-color:#9ec4f3;
+    /* background-color:#9ec4f3; */
 }
 
 .menu-item:hover{
@@ -142,7 +140,15 @@ padding:10px;
     .sidebar{
        display:none;
     }
+
+    .menu-toggle{
+        display:inline;
+    }
     
+    .menu-item{
+        display:none;
+    }
+
 }
 
 @media only screen and (min-width: 769px){
