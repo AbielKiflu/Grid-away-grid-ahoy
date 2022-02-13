@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
-    color: #1f1f20;
-    font-family: 'Dosis', sans-serif;
+   
 }
 
 
@@ -105,37 +104,67 @@
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-    box-shadow: 2px 2px 2px rgb(233, 231, 231), -2px -2px 1px  rgb(233, 231, 231);
-    border: 1 solid black;
+    box-shadow: 0px 1px 2px 1px rgb(158, 156, 156);
+    border-radius: 5px;
     padding:10px;
 }
 
-/*   anchor element in the card */
-.card  a{
-    text-decoration:none;
-    padding:5px 15px;
-    font-size:16px;
-    font: weight 700px;
+/*   card header */
+
+.card-header{
+    font-family: 'Roboto Serif', sans-serif;
+    text-align: center;
 }
 
-.card  div{
-    padding: 10px 0px 5px 0px;
-    border-top: 1px solid #ccc;
+/*   card description */
+.card-description{
+    text-align: center;
+    padding:3px;
+    font-size: 14px;
+    color: #646466;
+}
+
+
+/* card link  */
+.card-link{
+    color: #5f5f61;
+    text-decoration:none;
+    padding: 10px;
+    font-size:14px;
+    position: relative;
+    font-family: 'Roboto Serif', sans-serif;
+}
+ 
+/*   making a line over card links */ 
+
+.card-link::before{
+    content: "___________";
+    position: absolute;
+    display:block;
+    top:-15px;
+    
+}
+ 
+/*   the line over the card links disapears */
+.card-link:hover::before{
+   content: "";
 }
  
 
-/*   when the anchor hovered its style get changed */
-.card div:hover{
+
+/*   card link hover modifies its style */
+.card-link:hover{
     background-color:#4F9CFC;
     color: #FFFFFF;
     text-decoration:none;
-    box-shadow: 3px 3px 3px rgb(151, 146, 146);
-    border-radius:20px
+    box-shadow: 0px 1px 0px 1px rgb(201, 197, 197);
+    border-radius:20px;
+    color:white;
 }
 
  
 /*   Image Style, It contains image element inside the card */
-.card img {
+.card-image {
     width: 40px;
     height: 40px;
 }
